@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/*ESTO ES PARA EL VIDEO DE FONDO*/
+video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.6;
+    z-index: -1;
+}
+/*ESTO ES PARA EL VIDEO DE FONDO*/
+
+/*ESTO ES EL ENCABEZADO CON LA BARRA DE NAVEGACION*/
+.encabezado{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 120px;
+   padding: 5px 10%;
+   z-index: 1;
+}
+
+.encabezado .logo{
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+.logo img{
+    height: 88px;
+    width: auto;
+    transition: all 0.3s;
+    
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+}
+
+.nav-links{
+    list-style: none;
+    z-index: 1;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 70px;
+    text-shadow: 9px 8px 4px black;
+    transition: all 0.1s;
+    font-size: 25px;
+}
+
+.nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.nav-links li a:hover{
+    color: #8bd3f8;;
+}
+
+.contacto button{
+    font-weight: 700;
+    color: black;
+    padding: 7px 25px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    z-index: 1;
+}
+
+.contacto button:hover{
+    background-color: #8bd3f8;
+    transform: scale(1.1);
+    z-index: 2;
+}
+/*ESTO ES EL ENCABEZADO CON LA BARRA DE NAVEGACION*/
+
+/*ESTO ES EL CONTENIDO PRINCIPAL*/
+
+.contenido{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 190px 0px;
+}
+
+/*ESTO ES LA CAPA OSCURA*/
+.contenido:before{
+    content: "";
+    border-radius: 45px;
+    width: 53%;
+    height: 400px;
+    background-color: #1c1c1d;
+    opacity: 0.6;
+    position:absolute;
+    z-index: -1;
+}
+/*ESTO ES LA CAPA OSCURA*/
+
+.caja1{
+    text-align: center;
+    width: 570px;
+    height: 400px;
+    font-size: 30px;
+    color: white;
+}
+
+
+/*EFECTO TIPO CARRUSEL*/
+.caja2{
+    width: 27%;
+    height: 400px;
+    padding: 50px 85px;
+    overflow: hidden;
+}
+
+.caja2 ul{
+    display: flex;
+    width:400%;
+    animation: slide 19s infinite alternate ease-in-out;
+    
+}
+
+.caja2 li{
+    list-style: none;
+    width: 100%;
+}
+
+.caja2 img{
+    width: 400px;
+    height: 300px;
+    border-radius: 31px;
+    border-width: 1px;
+    margin: 0px 75px;
+    z-index: 1;
+    
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -108%;}
+    45%{margin-left: -108%;}
+
+    50%{margin-left: -214%;}
+    70%{margin-left: -214%;}
+
+    75%{margin-left: -319%;}
+    100%{margin-left: -319%;}
+}
+/*EFECTO TIPO CARRUSEL*/
+
+/*ESTO ES EL CONTENIDO PRINCIPAL*/
+
+/*CALENDARIO*/
+.caja3{
+    display: flex;
+    justify-content: center;
+}
+
+table th{
+    font-size: 70px;
+
+}
+
