@@ -122,7 +122,7 @@ video{
     width: 100%;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 190px 0px;
+    margin: 120px 0px;
 }
 
 /*ESTO ES LA CAPA OSCURA*/
@@ -195,13 +195,74 @@ video{
 /*ESTO ES EL CONTENIDO PRINCIPAL*/
 
 /*CALENDARIO*/
-.caja3{
+.calendario{
     display: flex;
+    align-items: center;
     justify-content: center;
+    height: 100%;
+    color: white;
 }
 
-table th{
-    font-size: 70px;
-
+.caja3{
+    position: relative;
+    height: 500px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 25px 4px rgba(0,0,0,0.5);
+    border-radius: 20px;
 }
 
+.calendario .imagen-calendario{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.calendario .caja3 img{
+    height: 500px;
+    padding: 30px;
+    border-radius: 60px;
+}
+
+.calendario .caja3 .datos{
+    width: 400px;
+    padding: 20px;
+}
+
+.calendario .caja3 .dias{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendario .caja3 h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 80px 10px;
+}
+
+.calendario .caja3 .dia-letra,
+.caja3 .numero{
+    height: 45px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.caja3 .numero-antes{
+    height: 45px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:bolder;
+    color: #9c9c9c;
+}
+
+.caja3 .numero.activo{
+    background: rgb(73,73,274);
+    border-radius: 100px;
+}
