@@ -119,6 +119,7 @@ video{
 /*CONTENIDO PRINCIPAL*/
 
 
+
   #container{
     padding: 3%;
 
@@ -128,7 +129,6 @@ video{
     display: flex;
     align-items: center;
     justify-content: center;
- 
     margin: 20px 0;
     padding: 10px;
     margin-left: 2%;
