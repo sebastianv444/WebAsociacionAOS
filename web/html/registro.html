@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/web/css/resgistro.css">
+    <link rel="stylesheet" href="/web/css/registro.css">
     <title>Contacto</title>
 </head>
 <body>
+    <section class="contenedor">
+        <header>Formulario de registro</header>
+        <form action="#" class="form">
+            <div class="input-caja">
+                <label>Nombres</label>
+                <input type="text" placeholder="Ingrese sus nombres" required>
+            </div>
 
+            <div class="input-caja">
+                <label>Apellidos</label>
+                <input type="text" placeholder="Ingrese sus apellidos" required>
+            </div>
+
+            <div class="input-caja">
+                <label>Correo electrónico</label>
+                <input type="text" placeholder="Ingrese su correo"  required>
+            </div>
+
+            <div class="input-caja">
+                <label>DNI</label>
+                <input type="text" placeholder="Ingrese su DNI" required>
+            </div>
+
+            <div class="columna">
+                <div class="input-caja">
+                    <label>Teléfono</label>
+                    <input type="text" placeholder="Ingrese su teléfono" required>
+                </div>
+
+                <div class="input-caja">
+                    <label>Fecha de nacimiento</label>
+                    <input type="text" placeholder="Ingrese su fecha de nacimiento" required>
+                </div>
+            </div>
+
+            <div class="genero-caja">
+                <h3>Género</h3>
+                <div class="genero-opcion">
+                    <div class="genero">
+                        <input type="radio" id="check-masculino" name="Género" checked>
+                        <label for="check">Masculino</label>
+                    </div>
+                    <div class="genero">
+                        <input type="radio" id="check-femenino" name="Género">
+                        <label for="check">Femenino</label>
+                    </div>
+                    <div class="genero">
+                        <input type="radio" id="check-otro" name="Género">
+                        <label for="check">Prefiero no decirlo</label>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="input-caja">
+                <label>Dirección</label>
+                <input type="text" placeholder="Ingrese su direción" required>
+            </div>
+            <div class="columna">
+                <div class="select-caja">
+                    <select>
+                        <option value="">Pais</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </section>
 </body>
 </html>
