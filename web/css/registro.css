@@ -12,7 +12,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background: rgb(130, 106, 251);
+    background-image: url(/img/paisaje-fondo.jpg);
 }
 .contenedor{
     position: relative;
@@ -51,6 +51,9 @@ body{
     border-radius: 6px;
     padding: 0 15px;
 }
+.input-caja input:focus{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
 .form .columna{
     display: flex;
     column-gap: 15px;
@@ -74,14 +77,44 @@ body{
 .form .genero{
     column-gap: 5px;
 }
+/*Color del boton de opcion de genero*/
+.genero input{
+    accent-color: rgb(130, 106, 251);
+}
 .form :where(.genero input, .genero label){
     cursor: pointer;
+}
+.direccion :where(input, .select-caja){
+    margin-top: 15px;
 }
 .select-caja select{
     height: 100%;
     width: 100%;
     outline: none;
     border: none;
+    background-color: #fff;
+    color: #707070;
+    font-size: 1rem;
+}
+.form button{
+    height: 55px;
+    width: 50%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2 ease;
+    background-color: rgb(130, 106, 251);
+}
+.form button:hover{
+    background-color: rgb(88, 56, 250);
+}
+
+#condiciones{
+    margin-top: 15px;
 }
 
 /*Responsive*/

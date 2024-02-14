@@ -1,77 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/web/css/registro.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/web/css/registro.css" />
+    <script src="/web/js/registro.js"></script>
     <title>Contacto</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="contenedor">
-        <header>Formulario de registro</header>
-        <form action="#" class="form">
-            <div class="input-caja">
-                <label>Nombres</label>
-                <input type="text" placeholder="Ingrese sus nombres" required>
-            </div>
+      <header>Formulario de registro</header>
+      <form action="" class="form" method="#">
+        <div class="input-caja">
+          <label>Nombres</label>
+          <input type="text" name="nombre" placeholder="Ingrese sus nombres" required />
+        </div>
 
-            <div class="input-caja">
-                <label>Apellidos</label>
-                <input type="text" placeholder="Ingrese sus apellidos" required>
-            </div>
+        <div class="input-caja">
+          <label>Apellidos</label>
+          <input type="text" name="apellido" placeholder="Ingrese sus apellidos" required />
+        </div>
 
-            <div class="input-caja">
-                <label>Correo electrónico</label>
-                <input type="text" placeholder="Ingrese su correo"  required>
-            </div>
+        <div class="input-caja">
+          <label for="correo">Correo electrónico</label>
+          <input type="email"id="correo" name="gmail" placeholder="Ingrese su correo" required />
+        </div>
 
-            <div class="input-caja">
-                <label>DNI</label>
-                <input type="text" placeholder="Ingrese su DNI" required>
-            </div>
+        <div class="input-caja">
+          <label>DNI</label>
+          <input type="text" name="dni" placeholder="Ingrese su DNI" required />
+        </div>
 
-            <div class="columna">
-                <div class="input-caja">
-                    <label>Teléfono</label>
-                    <input type="text" placeholder="Ingrese su teléfono" required>
-                </div>
+        <div class="columna">
+          <div class="input-caja">
+            <label>Teléfono</label>
+            <input type="number" name="numero" placeholder="Ingrese su teléfono" required />
+          </div>
 
-                <div class="input-caja">
-                    <label>Fecha de nacimiento</label>
-                    <input type="text" placeholder="Ingrese su fecha de nacimiento" required>
-                </div>
-            </div>
+          <div class="input-caja">
+            <label>Fecha de nacimiento</label>
+            <input
+              type="date" name="nacimiento"
+              placeholder="Ingrese su fecha de nacimiento"
+              required
+            />
+          </div>
+        </div>
 
-            <div class="genero-caja">
-                <h3>Género</h3>
-                <div class="genero-opcion">
-                    <div class="genero">
-                        <input type="radio" id="check-masculino" name="Género" checked>
-                        <label for="check">Masculino</label>
-                    </div>
-                    <div class="genero">
-                        <input type="radio" id="check-femenino" name="Género">
-                        <label for="check">Femenino</label>
-                    </div>
-                    <div class="genero">
-                        <input type="radio" id="check-otro" name="Género">
-                        <label for="check">Prefiero no decirlo</label>
-                    </div>
-                </div>
+        <div class="genero-caja">
+          <h3>Género</h3>
+          <div class="genero-opcion">
+            <div class="genero">
+              <input type="radio" name="masculino" id="check-masculino" name="Género" checked />
+              <label for="check">Masculino</label>
             </div>
+            <div class="genero">
+              <input type="radio" name="femenino" id="check-femenino" name="Género" />
+              <label for="check">Femenino</label>
+            </div>
+            <div class="genero">
+              <input type="radio" name="otro" id="check-otro" name="Género" />
+              <label for="check">Prefiero no decirlo</label>
+            </div>
+          </div>
+        </div>
         
-            <div class="input-caja">
-                <label>Dirección</label>
-                <input type="text" placeholder="Ingrese su direción" required>
+
+        <div class="input-caja direccion">
+          <label>Otros</label>
+          <div class="select-caja">
+            <select>
+              <option hidden>Estado civil</option>
+              <option>Casado</option>
+              <option>Soltero</option>
+              <option>Viudo</option>
+              <option>Divorciado</option>
+            </select>
+          </div>
+          <div class="select-caja">
+            <select>
+              <option hidden>Disponibilidad</option>
+              <option>Completa</option>
+              <option>Media</option>
+              <option>Baja</option>
+              <option>Intermitente</option>
+            </select>
+          </div>
+          <div class="select-caja">
+            <select>
+              <option hidden>Motivación para entrar</option>
+              <option>Amor a los gatos</option>
+              <option>Contribuir al bienestar animal</option>
+              <option>Voluntariado</option>
+              <option>Conexión comunitaria</option>
+              <option>Desarrollo de habilidades</option>
+              <option>Educación y concienciación</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input-caja direccion">
+          <label>Dirección</label>
+          <input type="text" name="direccion" placeholder="Ingrese su direción" required />
+
+          <div class="columna">
+            <div class="select-caja">
+              <select>
+                <option hidden>Pais</option>
+                <option>España</option>
+                <option>Portugal</option>
+                <option>Francia</option>
+                <option>Andorra</option>
+              </select>
             </div>
-            <div class="columna">
-                <div class="select-caja">
-                    <select>
-                        <option value="">Pais</option>
-                    </select>
-                </div>
-            </div>
-        </form>
+            <input type="text" name="ciudad" placeholder="Ingrese su Ciudad" required />
+          </div>
+          <input type="number" name="cp" placeholder="Ingrese su Codigo Postal" required />
+
+          <div class="input-caja direccion">
+            <label>Observación</label>
+            <input
+              type="text" name="observaciones"
+              placeholder="Ingrese sus observaciones"
+              required
+            />
+          </div>
+          
+          
+
+
+        </div>
+
+        <div class="genero" id="condiciones">
+            <input type="radio" name="condiciones" id="check-masculino" name="Género" checked />
+            <label for="check" >Acepto los Términos y Condiciones</label>
+          </div>
+
+          <div class="columna">
+            <button type="reset">Reiniciar</button>
+            <button type="submit" onclick="validarCorreo()">Enviar</button>
+          </div>
+      </form>
     </section>
-</body>
+  </body>
 </html>
