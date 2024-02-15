@@ -1,271 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-/*ESTO ES PARA EL VIDEO DE FONDO*/
-video{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover;
-}
-
-.capa{
-    position: absolute;
+/*BARRA DE NAVEGACION*/
+.encabezado{
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: #1c1c1d;
-    opacity: 0.6;
-    z-index: -1;
-}
-/*ESTO ES PARA EL VIDEO DE FONDO*/
-
-/*ESTO ES EL ENCABEZADO CON LA BARRA DE NAVEGACION*/
-.encabezado{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   height: 120px;
-   padding: 5px 10%;
-   z-index: 1;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
 }
 
-.encabezado .logo{
-    cursor: pointer;
-    z-index: 1;
-    
+.logo{
+    position: relative;
 }
 
 .logo img{
     height: 88px;
     width: auto;
     transition: all 0.3s;
-    
 }
 
 .logo img:hover{
     transform: scale(1.2);
 }
 
-.nav-links{
-    list-style: none;
-    z-index: 1;
-}
-
-.nav-links li{
-    display: inline-block;
-    padding: 0 70px;
-    text-shadow: 9px 8px 4px black;
-    transition: all 0.1s;
-    font-size: 25px;
-}
-
-.nav-links li:hover{
-    transform: scale(1.1);
-}
-
-.nav-links a{
-    font-size: 700;
-    color: white;
-    text-decoration: none;
-    z-index: 1;
-}
-
-.nav-links li a:hover{
-    color: #8bd3f8;;
-}
-
-.contacto button{
-    font-weight: 700;
-    color: black;
-    padding: 7px 25px;
-    background: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    font-size: 25px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    z-index: 1;
-}
-
-.contacto button:hover{
-    background-color: #8bd3f8;
-    transform: scale(1.1);
-    z-index: 2;
-}
-/*ESTO ES EL ENCABEZADO CON LA BARRA DE NAVEGACION*/
-
-/*ESTO ES EL CONTENIDO PRINCIPAL*/
-
-.contenido{
-    width: 100%;
-    height: 100%;
-}
-
-.curiosidades{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 140px 0px 50px 0px;
-}
-
-/*ESTO ES LA CAPA OSCURA*/
-.curiosidades:before{
-    content: "";
-    border-radius: 45px;
-    width: 53%;
-    height: 400px;
-    background-color: #1c1c1d;
-    opacity: 0.6;
-    position:absolute;
-    z-index: -1;
-}
-/*ESTO ES LA CAPA OSCURA*/
-
-.caja1{
-    text-align: center;
-    width: 570px;
-    height: 400px;
-    font-size: 30px;
-    color: white;
-}
-
-
-/*EFECTO TIPO CARRUSEL*/
-.caja2{
-    width: 27%;
-    height: 400px;
-    padding: 50px 85px;
-    overflow: hidden;
-}
-
-.caja2 ul{
-    display: flex;
-    width:400%;
-    animation: slide 19s infinite alternate ease-in-out;
-    
-}
-
-.caja2 li{
-    list-style: none;
-    width: 100%;
-}
-
-.caja2 img{
-    width: 400px;
-    height: 300px;
-    border-radius: 31px;
-    border-width: 1px;
-    margin: 0px 75px;
-    z-index: 1;
-    
-}
-
-@keyframes slide{
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
-
-    25%{margin-left: -108%;}
-    45%{margin-left: -108%;}
-
-    50%{margin-left: -214%;}
-    70%{margin-left: -214%;}
-
-    75%{margin-left: -319%;}
-    100%{margin-left: -319%;}
-}
-/*EFECTO TIPO CARRUSEL*/
-
-/*ESTO ES EL CONTENIDO PRINCIPAL*/
-
-/*CALENDARIO*/
-.calendario{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: white;
-}
-
-.caja3{
+.navegacion{
     position: relative;
-    height: 500px;
-    width: 900px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 2px 25px 4px rgba(0,0,0,0.5);
-    border-radius: 20px;
 }
 
-.calendario .imagen-calendario{
+.navegacion a{
+    font-size: 18px;
+    color: #fff;
+    font-size: 26px;
+    margin: 0 70px;
+    transition: all .5s;
+}
+
+.navegacion a:hover{
+    color: #e5be01;
+}
+
+.boton.contacto{
+    position: relative;
+    border: none;
+    transition: all 0.3s;
+}
+
+.boton.contacto:hover{
+    transform: scale(1.2);
+}
+/*BARRA DE NAVEGACION*/
+
+/*CONTENIDO PRINCIPAL*/
+.contenido{
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background: url("../../img/paisaje-fondo.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 50px 0 0 6%;
+}
+
+.contenido-principal{
+    max-width: 670px;
+}
+
+.contenido-principal h1{
+    position: relative;
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.contenido-principal h1:nth-child(1){
+    background:linear-gradient(#ffff00,#b78700);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.contenido-principal p{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px 0 30px;
+}
+
+.contenido-principal .boton-contenido{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+}
+
+.contenido-principal .boton-contenido:hover{
+    color: black;
+}
+
+.boton{
+    padding: 15px 28px;
+    background: #e5be01;
+    border: 2px solid #e5be01;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 750;
+}
+
+.boton-contenido .boton:nth-child(2){
+    background: transparent;
+    color:#e5be01;
+    transition: .5s;
+    color: #fff;
+}
+
+.boton-contenido .boton:nth-child(2):hover{
+    background: #e5be01;
+}
+
+.animacion{
     position: absolute;
     top: 0;
     right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    animation: show-right 1s ease-out forwards;
+    animation-delay: calc(.3s * var(--i));
 }
 
-.calendario .caja3 img{
-    height: 500px;
-    padding: 30px;
-    border-radius: 60px;
+.animacion.bg{
+    animation: fade-in 1s ease-out forwards;
+    animation-delay: 2.5s;
 }
 
-.calendario .caja3 .datos{
-    width: 400px;
-    padding: 20px;
+.contenido-principal .contenido2{
+    max-width: 520px;
 }
 
-.calendario .caja3 .dias{
-    display: flex;
-    flex-wrap: wrap;
+.contenido2{
+    margin: 0px 0 0 930px;
 }
 
-.calendario .caja3 h3{
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0 80px 10px;
+.foto1{
+    width: auto;
+    height: 660px;
+    border-radius: 110px;
 }
 
-.calendario .caja3 .dia-letra,
-.caja3 .numero{
-    height: 45px;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+@keyframes show-right{
+    100%{
+        width: 0;
+
+    }
 }
 
-.caja3 .numero-antes{
-    height: 45px;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight:bolder;
-    color: #9c9c9c;
-}
+@keyframes fade-in{
+    100%{
+        opacity: 0;
 
-.caja3 .numero.activo{
-    background: rgb(73,73,274);
-    border-radius: 100px;
+    }
 }
-/*CALENDARIO*/
-
-/*PIE DE PAGINA*/
