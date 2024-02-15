@@ -152,13 +152,12 @@
 }
 
 .contenido2{
-    margin: 0px 0 0 930px;
+    margin: 0px 0 0 690px;
 }
 
 .foto1{
-    width: auto;
-    height: 660px;
-    border-radius: 110px;
+    width: 950px;
+    height: 630px;
 }
 
 @keyframes show-right{
