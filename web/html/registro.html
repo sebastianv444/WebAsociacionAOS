@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/web/css/registro.css" />
+    <link rel="shortcut icon" href="/img/gato-circulo.png">
     <script src="/web/js/registro.js"></script>
     <title>Contacto</title>
   </head>
   <body>
+    <header class="encabezado" id="navbar">
+      <a href="index.html" class="logo">
+          <img src="../../img/gato-circulo.png" alt="logo de pagina">
+          <span class="animacion" style="--i:1;"></span>
+      </a>
+      <nav class="navegacion">
+          <a href="nosotros.html" class="links"><b>Quienes somos</a>
+          <a href="adopcion.html" class="links">Adopcion</a>
+          <a href="registro.html" class="links">Registrate</b></a>
+          <span class="animacion" style="--i:2;"></span>
+      </nav>
+      <a href="#" class="boton contacto">Contacto<span class="animacion" style="--i:3;"></span></a>
+  </header>
+  <div class="background-image"></div>
     <section class="contenedor">
       <header>Formulario de registro</header>
       <form action="" class="form" method="#">
@@ -51,15 +66,15 @@
           <h3>Género</h3>
           <div class="genero-opcion">
             <div class="genero">
-              <input type="radio" name="masculino" id="check-masculino" name="Género" checked />
+              <input type="radio" name="opcion" id="check-masculino" name="Género" checked />
               <label for="check">Masculino</label>
             </div>
             <div class="genero">
-              <input type="radio" name="femenino" id="check-femenino" name="Género" />
+              <input type="radio" name="opcion" id="check-femenino" name="Género" />
               <label for="check">Femenino</label>
             </div>
             <div class="genero">
-              <input type="radio" name="otro" id="check-otro" name="Género" />
+              <input type="radio" name="opcion" id="check-otro" name="Género" />
               <label for="check">Prefiero no decirlo</label>
             </div>
           </div>
@@ -132,7 +147,7 @@
         </div>
 
         <div class="genero" id="condiciones">
-            <input type="radio" name="condiciones" id="check-masculino" name="Género" checked />
+            <input type="radio" name="condiciones" id="check-masculino" name="Género"  />
             <label for="check" >Acepto los Términos y Condiciones</label>
           </div>
 
