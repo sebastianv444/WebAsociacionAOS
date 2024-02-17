@@ -80,16 +80,17 @@ body{
     padding: 20px;
     
 }
+/*Imagen de fondo*/
 .background-image {
-    background-image: url(/img/fondo6.jpg); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta de tu imagen */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    position: fixed; /* Hace que la imagen de fondo se mantenga fija mientras se desplaza la página */
+    background-image: url(/img/fondo6.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Coloca la imagen detrás de todo el contenido */
+    z-index: -1; 
   }
 .contenedor{
     margin-top: 170px;
@@ -169,7 +170,7 @@ body{
     height: 100%;
     width: 100%;
     outline: none;
-    border: none;
+    border:  none !important;
     background-color: #fff;
     color: #707070;
     font-size: 1rem;
