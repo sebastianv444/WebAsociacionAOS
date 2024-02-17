@@ -5,27 +5,77 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-
-body{
-    height: 100vh;
-    width: 100%;
-    display: flex;/*Sebas dice de poner esto en las propias etiquetas*/
-    align-items: center;/*Sebas dice de poner esto en las propias etiquetas*/
-    justify-content: center;/*Sebas dice de poner esto en las propias etiquetas*/
-}
-/*Imagen de fondo*/
-.background-image {
-    background-image: url(/img/fondo6.jpg); 
-    background-size: cover; 
-    background-position: center; 
-    position: fixed; 
+/*BARRA DE NAVEGACION*/
+.encabezado{
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    z-index: -1; 
-  }
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.hidden{
+    top: -113px;
+}
+
+.logo{
+    position: relative;
+}
+
+.logo img{
+    height: 88px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+}
+
+.navegacion{
+    position: relative;
+}
+
+.navegacion a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 70px;
+    transition: all .5s;
+}
+
+.navegacion a:hover{
+    color: #e5be01;
+}
+
+.boton.contacto{
+    position: relative;
+    border: none;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.boton.contacto:hover{
+    transform: scale(1.2);
+}
+.boton{
+    padding: 15px 28px;
+    background: #e5be01;
+    border: 2px solid #e5be01;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 750;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+
 /*Formulario de contactarnos*/
 .contenedor{
     max-width: 1050px;
@@ -152,4 +202,40 @@ body{
     .contenido{
         padding: 10px 0;
     }
+}
+.bloque1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(/img/fondo6.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: none; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    justify-content: center;
+    align-items: center;
+}
+.bloque2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/paisaje-fondo.jpg);
+    background-size: cover; 
+    background-position: center;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+/*Apartado de imagenes de referencia*/
+.imagenesReferencias{
+    
+}
+.imgs{
+    margin: 0 10px;
 }
