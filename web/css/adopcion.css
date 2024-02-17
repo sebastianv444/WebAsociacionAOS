@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 
 }
+
 body {
     display: flex;
     text-transform: uppercase;
@@ -17,43 +21,28 @@ body {
 	justify-content: center;
 	position: absolute;
 	margin: 0px;
+    background: url("../../img/paisaje-fondo.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-
-/*ESTO ES PARA EL VIDEO DE FONDO*/
-video{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover;
-}
-
-.capa{
-    position: absolute;
+/*BARRA DE NAVEGACION*/
+.encabezado{
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: #1c1c1d;
-    opacity: 0.6;
-    z-index: -1;
-}
-/*ESTO ES PARA EL VIDEO DE FONDO*/
-
-/*ESTO ES EL ENCABEZADO CON LA BARRA DE NAVEGACION*/
-.encabezado{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   height: 120px;
-   padding: 5px 10%;
-   z-index: 1;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    
 }
 
-.encabezado .logo{
-    cursor: pointer;
-    z-index: 1;
+.logo{
+    position: relative;
 }
 
 .logo img{
@@ -66,58 +55,63 @@ video{
     transform: scale(1.2);
 }
 
-.nav-links{
-    list-style: none;
-    z-index: 1;
+.navegacion{
+    position: relative;
 }
 
-.nav-links li{
-    display: inline-block;
-    padding: 0 70px;
-    text-shadow: 9px 8px 4px black;
-    transition: all 0.1s;
-    font-size: 25px;
+.navegacion a{
+    color: #fff;
+    font-size: 26px;
+    margin: 0 70px;
+    transition: all .5s;
 }
 
-.nav-links li:hover{
-    transform: scale(1.1);
+.navegacion a:hover{
+    color: #e5be01;
 }
 
-.nav-links a{
-    font-size: 700;
-    color: white;
-    text-decoration: none;
-    z-index: 1;
-}
-
-.nav-links li a:hover{
-    color: #8bd3f8;;
-}
-
-.contacto button{
-    font-weight: 700;
-    color: black;
-    padding: 7px 25px;
-    background: white;
+.boton.contacto{
+    position: relative;
     border: none;
-
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    font-size: 25px;
-    z-index: 1;
+    transition: all 0.3s;
 }
 
-.contacto button:hover{
-    background-color: #8bd3f8;
-    transform: scale(1.1);
-    z-index: 2;
+.boton.contacto:hover{
+    transform: scale(1.2);
 }
-/*ESTO ES EL ENCABEZADO CON LA BARRA DE NAVEGACION*/
 
+.boton{
+    padding: 15px 28px;
+    background: #e5be01;
+    border: 2px solid #e5be01;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 750;
+}
+/*BARRA DE NAVEGACION*/
+
+
+.contenido{
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background: url("../../img/paisaje-fondo.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px 0 0 6%;
+    z-index: -1;
+}
 
 
 /*CONTENIDO PRINCIPAL*/
 
+#encabezado{
+margin-top: 150px;
+color: white;
+}
 
 
   #container{
@@ -169,7 +163,7 @@ img {
 .card {
 	aspect-ratio: 3 / 2;
 	border: 4px solid black;
-	background-color: #bedfbb;
+	background-color: #e7dda7;
 	position: relative;
 	transition: .15s ease;
 	cursor: pointer;
@@ -181,7 +175,7 @@ img {
 		height: 100%;
 		width: 100%;
 		border: 4px solid black;
-		background-color: #327037;
+		background-color: #e5be01;
 		transform-origin: center center;
 		z-index: -1;
 		transition: .15s ease;
