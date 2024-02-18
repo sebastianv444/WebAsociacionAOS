@@ -1,17 +1,3 @@
-function validarCorreo(){
-    var correo = document.getElementById("correo").value;
-    var expresionRegular = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if(expresionRegular.test(correo)){
-        return true;
-    } else{
-        alert("Por favor, ingresa un correo valido");
-        return false;
-    }
-}
-
-/**
- * Con esta funcion hacemos que desaparezca la barra navegadora
- */
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -22,5 +8,3 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
-
-

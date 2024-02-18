@@ -72,12 +72,7 @@
     font-weight: 750;
 }
 body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    
+    width: 100%;
 }
 /*Imagen de fondo*/
 .background-image {
@@ -100,13 +95,20 @@ body{
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    flex-flow: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 430px;
+    margin-bottom: 50px;
 }
-.contenedor header{
+.contenedor h1{
     font-size: 1.5rem;
     color: #333;
     font-weight: 500;
     text-align: center;
 }
+
 .contenedor .form{
     margin-top: 30px;
 }
@@ -116,6 +118,7 @@ body{
 }
 .input-caja label{
     color: #333;
+    
 }
 .form :where(.input-caja input, .select-caja){
     position: relative;
@@ -135,7 +138,6 @@ body{
 .form .columna{
     display: flex;
     column-gap: 15px;
-
 }
 .form .genero-caja{
     margin-top: 20px;
@@ -169,10 +171,11 @@ body{
     height: 100%;
     width: 100%;
     outline: none;
-    border:  none !important;
+    border:  0;
     background-color: #fff;
     color: #707070;
     font-size: 1rem;
+
 }
 .form button{
     height: 55px;
