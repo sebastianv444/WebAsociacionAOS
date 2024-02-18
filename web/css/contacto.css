@@ -207,7 +207,7 @@ body{
     width: 100%;
     height: 100vh;
     display: flex;
-    background-image: url(/img/fondo6.jpg); 
+    background-image: url(../../img/paisaje-fondo.jpg); 
     background-size: cover; 
     background-position: center; 
     background-attachment: none; 
@@ -222,23 +222,59 @@ body{
 .bloque2{
     width: 100%;
     height: 100vh;
-    background-image: url(/img/paisaje-fondo.jpg);
+    background-image: url(../../img/fondo6.jpg);
     background-size: cover; 
     background-position: center;  
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     z-index: -1; 
 }
+.apartado{
+    margin-left: 100px;
+    color: #E0E0DA;
+}
+#informacion-contacto {
+    margin-bottom: 40px;
+  }
+  #informacion-contacto h2 {
+    font-size: 24px;
+    margin: 50px 50px 50px 50px;
+  }
+  h2{
+    padding-top: 50px;
+  }
 
-/*Apartado de imagenes de referencia*/
-.imagenesReferencias{
-    
-}
-.imgs{
-    margin: 0 10px;
-}
+  #correo,
+  #direccion,
+  #imagenes-alrededores,
+  #informacion-personal {
+    margin-bottom: 30px;
+  }
+  
+  #correo h3,
+  #direccion h3,
+  #imagenes-alrededores h3,
+  #informacion-personal h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #correo p,
+  #direccion p {
+    margin-bottom: 10px;
+  }
+  
+  .imagen {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .imagen img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  }
+  
 footer{
     width: 100%;
     background:#b78700;

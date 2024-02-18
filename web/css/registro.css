@@ -81,7 +81,7 @@ body{
 }
 /*Imagen de fondo*/
 .background-image {
-    background-image: url(/img/fondo6.jpg); 
+    background-image: url(../../img/fondo6.jpg); 
     background-size: cover; 
     background-position: center; 
     position: fixed; 
